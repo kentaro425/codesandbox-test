@@ -225,6 +225,7 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "43301" + '/');
 
+
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
